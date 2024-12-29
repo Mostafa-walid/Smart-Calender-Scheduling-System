@@ -1,0 +1,227 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    margin: 0;
+}
+
+/* Header */
+header {
+    background-color: #333;
+    padding: 15px;
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+    position: relative; /* Added position relative */
+    z-index: 10; /* Ensure it stays above other elements */
+}
+
+
+
+/* Styles for buttons and form sections as before */
+
+
+header nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+header nav ul li {
+    margin: 0 10px;
+}
+
+header nav ul li button {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+header nav ul li button:hover {
+    background-color: #218838;
+}
+
+/* Main Content */
+main {
+    max-width: 800px;
+    margin: 20px auto; /* Added margin for spacing */
+    padding-top: 20px; /* Add padding to prevent overlap with header */
+}
+/* Main Buttons Styling */
+.main-buttons {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.main-buttons button {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 15px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.main-buttons button:hover {
+    background-color: #218838;
+}
+
+/* Options Section */
+.options-section {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.options-section button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.options-section button:hover {
+    background-color: #0056b3;
+}
+
+/* Form Styling */
+
+
+.form-section {
+    background-color: #fff;
+    padding: 20px;
+    margin: 0 auto;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 700px;
+}
+
+.form-section h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.form-section label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+    color: #555;
+}
+
+.form-section input[type="text"],
+.form-section input[type="email"],
+.form-section input[type="password"],
+.form-section input[type="date"] 
+    {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.form-section input[type="submit"] {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.form-section input[type="submit"]:hover {
+    background-color: #218838;
+}
+
+/* Table Styles */
+.orders-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+.orders-table thead th {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: left;
+    font-weight: bold;
+}
+
+.orders-table tbody td {
+    padding: 8px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.orders-table tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.orders-table tbody td a {
+    margin: 0 5px;
+    color: #007bff;
+    text-decoration: none;
+}
+
+.orders-table tbody td a:hover {
+    color: #0056b3;
+}
+
+.orders-table tbody td a.edit-btn,
+.orders-table tbody td a.delete-btn,
+.orders-table tbody td a.collab-btn {
+
+    color: white;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.orders-table tbody td a.edit-btn {
+    background-color: #ffc107;
+}
+
+.orders-table tbody td a.edit-btn:hover {
+    background-color: #e0a800;
+}
+.orders-table tbody td a.collab-btn {
+    background-color: green;
+}
+
+.orders-table tbody td a.collab-btn:hover {
+    background-color: grey;
+}
+
+.orders-table tbody td a.delete-btn {
+    background-color: #dc3545;
+}
+
+.orders-table tbody td a.delete-btn:hover {
+    background-color: #c82333;
+}
+
+
+.orders-table tbody td a.delete-btn:hover {
+    background-color: #c82333;
+}

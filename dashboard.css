@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+        .calendar-wrapper {
+            margin: 60px auto;
+            max-width: 1200px; 
+            display: flex;
+            flex-direction: column;
+        }
+
+.calendar-header button {
+    background-color: #007bff;
+    color: #fff; 
+    border: none; 
+    border-radius: 5px; 
+    padding: 10px 15px; 
+    font-size: 16px; 
+    cursor: pointer; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    transition: all 0.3s ease; 
+    outline: none; 
+    margin: 0 5px; 
+}
+
+.calendar-header button:hover {
+    background-color: #0056b3; 
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); 
+    transform: translateY(-2px); 
+}
+
+
+.calendar-header button:focus {
+    outline: 2px solid #0056b3; 
+    outline-offset: 2px;
+}
+
+
+.calendar-header button:disabled {
+    background-color: #cccccc; 
+    color: #666666; 
+    cursor: not-allowed; 
+    box-shadow: none;   
+     transform: none; 
+}
+
+.calendar-header {
+    align-items: center;
+    text-align: center;
+    justify-content: space-between; 
+    margin-bottom: 20px;
+}
+
+.calendar-header h3 {
+    font-size: 20px;
+    color: #333; /* Neutral dark color */
+    font-weight: 500;
+    margin: 0;
+}
+
+
+        /* Calendar grid */
+        .calendar-grid {
+            display: grid;
+            grid-template-columns: repeat(7, 1fr); /* 7 columns for days of the week */
+            gap: 5px; /* Space between cells */
+            background-color: #f1f1f1;
+            border: 1px solid #ccc;
+        }
+
+        .calendar-grid .cell {
+            background-color: white;
+            padding: 15px;
+            border: 1px solid #ccc;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            text-align: center;
+            box-sizing: border-box;
+            height: 120px; /* Make cells square-like */
+        }
+
+        .calendar-grid .cell.empty {
+            background-color: #f9f9f9;
+            border: none;
+        }
+
+        .calendar-grid .cell .date {
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+
+        .calendar-grid .cell .event {
+            color: red;
+            font-size: 0.9em;
+        }
+
+        /* Highlight today */
+        .calendar-grid .cell.today {
+            background-color: white;
+            border: 2px solid red; /* Small red circle */
+        }
+
+        /* Highlight passed days */
+        .calendar-grid .cell.passed {
+            background-color: #ddd; /* Darker shade for passed days */
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .calendar-grid .cell {
+                padding: 10px;
+                height: auto; /* Let the height adjust naturally */
+            }
+        }

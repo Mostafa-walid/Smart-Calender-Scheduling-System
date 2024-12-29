@@ -1,0 +1,80 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0; /* Light gray background */
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+
+header {
+    background-color: #333; /* Dark header */
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin:inherit;     
+}
+
+.profile-container {
+    max-width: 600px;
+    margin: 0 auto; /* Center the profile container */
+    background-color: #ffffff; /* White background for the form */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top:150px;
+}
+
+h2 {
+    text-align: center; /* Center title */
+}
+
+.form-section {
+    margin-bottom: 20px; /* Space between forms */
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+    color: #555;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+input[type="submit"] {
+    width: 100%; /* Full width for buttons */
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary {
+    background-color: #389690; /* Green for update button */
+    color: white;
+}
+
+.btn-danger {
+    background-color: #dc3545; /* Red for delete button */
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #008fcc; /* Darker green on hover */
+}
+
+.btn-danger:hover {
+    background-color: #c82333; /* Darker red on hover */
+}
